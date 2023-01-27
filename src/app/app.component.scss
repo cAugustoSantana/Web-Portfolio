@@ -1,0 +1,129 @@
+.mainDiv{
+    height: 100%;
+    width: 100%;
+    p{
+        color: var(--primary-color);
+        text-align: center;
+    }
+
+    .topDiv{
+        display: flex;
+        height: 82.5px;
+        width: 100%;
+        justify-content: center;
+        
+
+        .title{
+            font-size: 56px;
+            margin-top: 35px;
+            color: var(--primary-color);
+        }
+
+    }
+
+        .contentAreaDiv{
+        display: flex;
+        flex-direction: column;
+        height: 100%;
+        width: 100%;
+
+        .socialDiv{
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            margin-top: 10px;
+
+            .icon{
+                display: flex;
+                flex-direction: row;
+                justify-content: space-evenly;
+            
+               img{
+                width: 67px;
+               }
+               img:hover{
+                color: pink;
+            }
+
+                
+        }
+
+
+    }
+    
+}
+    .mainContentDiv{
+        background-color: var(--background-primary);
+        display: flex;
+        flex-direction: column;
+        width: 100%;
+        height: auto;
+        padding:10px;
+        padding-top:20px;
+
+        .SummaryList{
+            color: var(--primary-color);
+            display: flex;
+            justify-content: center;
+            
+            .li{
+                margin: 0 10% 0 10%;
+            }
+        }
+
+        .mainContentCard{
+
+        }
+
+        hr{
+            background-color: var(--primary-color);
+            height: 1px;
+            border: none;
+            width: 100%;
+        }
+
+        .projectDiv{
+
+            display: flex;
+            flex-direction: row;
+            flex-wrap: wrap;
+            justify-content: center;
+
+            .projectCard{
+
+                display: flex;
+                flex-direction: column;
+                margin: 5px;
+                width: 200px;
+                height: auto;
+                background-color: var(--secondary-color);
+                color: var(--primary-color);
+
+                button{
+                    background-color: var(--background-main);
+                    color: var(--primary-color);
+                }
+            }
+        }
+    }
+
+    @media only screen and (min-width: 1080px) {
+
+        .contentAreaDiv{
+            flex-direction: row;
+
+            .socialDiv{
+                justify-content: flex-start;
+                width: 15%;
+                padding-top: 2.5%;
+            }
+        }
+        .topDiv{
+            position: relative;
+        }
+        .icon {
+            flex-direction: column;
+        }
+    }
+}
+
